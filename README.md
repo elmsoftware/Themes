@@ -1,6 +1,6 @@
 iDoHQ Themes
 ======
 
-Themes can be found on iDoHQ.com.
+Themes for the iDoHQ.com website for brides and grooms and wedding professionals.
 
-All themes were created using scss version of Sass.
+Created on my MacBook using MAMP + Codekit + Sass (scss).
