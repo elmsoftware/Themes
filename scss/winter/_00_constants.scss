@@ -1,0 +1,25 @@
+$bg             : #D9EBF3;
+$hero           : #2492C5;
+$gridbg         : $hero;
+
+$link           : #BA2640; // Winterberry
+
+$articleHeading : $gridbg;
+$articleColor   : #444;
+
+$quote          : #61BAE4;
+$blockquote     : #BEE5FF;
+$button         : $quote;
+
+$red            : $link;
+
+$gray           : gainsboro;
+
+$codeCapBg      : #555;
+$codeCapColor   : lighten($link, 20%);
+$codeBg         : #333;
+$codeColor      : #ddd;
+
+$padding        : .7em;
+$radius         : $padding * .5;
+$innerRadius    : $radius * .5;

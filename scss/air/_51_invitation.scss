@@ -1,0 +1,54 @@
+.invitation {
+  .page-wrap {
+    width          : 600px;
+    padding-bottom : $padding;
+    @include breakpoint(invite-bear){
+      width         : 100%;
+      padding-left  : $padding;
+      padding-right : $padding;
+    }
+  }
+}
+
+.wording {
+  background         : white;
+  box-shadow         : inset 0 0 8px #555;
+  margin-top         : $padding;
+  padding            : $padding*2;
+  text-align         : center;
+  @include breakpoint(invite-bear){
+    border-width : $padding;
+    padding      : $padding;
+  }
+  p {
+    @include font-headers;
+    font-weight : 400;
+    font-size   : 110%;
+    line-height : 1.9;
+    margin      : 5px 0;
+    @include breakpoint(invite-bear){
+      font-size : 100%;
+    }
+  }
+  a {
+    color: black;
+  }
+  span {
+    display : block;
+  }
+  .star {
+    @include font-headers;
+    font-size   : 35px;
+    font-weight : 700;
+    line-height : 1.4;
+    @include breakpoint(invite-bear) {
+      font-size : 25px;
+    }
+  }
+}
+
+.button-wrap {
+  text-align    : center;
+  margin-top    : $padding*2;
+  margin-bottom : $padding;
+}

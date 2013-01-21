@@ -1,0 +1,101 @@
+body {
+  background : $bg;
+}
+
+::selection {
+  background : $quote;
+  color      : white;
+}
+
+// ----------- HEADER
+.main-header {
+  @include background-size(cover);
+  background-position: center;
+  background-color : $hero;
+  color            : white;
+  text-align       : center;
+  padding          : 0 $padding;
+  box-shadow: inset 0 0 40px black;
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+  @include breakpoint(baby-bear) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;    
+  }
+  hgroup {
+    padding   : $padding*2 0;
+    @include breakpoint(baby-bear) {
+      padding : $padding 0;
+    }
+  }
+  h1, h2 {
+    color       : white;
+    margin      : .5em 0;
+    text-shadow : 0px 2px 5px black;
+    @include breakpoint(baby-bear) {
+      font-size : 150%;
+      margin    : .3em 0;
+    }
+  }
+  .ampersand {
+    color : $pink;
+  }
+  h2 {
+    @include breakpoint(baby-bear) {
+      font-size : 130%;
+    }
+  }
+  a {
+    color : white;
+    &:hover, &:focus {
+      text-shadow: 0px 1px 1px black, 
+                   0px 0px 4px white;
+      text-decoration: none;
+    }
+    @include breakpoint(phone){
+      span {
+        display : block;
+      }
+    }
+  }
+  time {
+    display : block;
+    font-size: 80%;
+    margin-top: .5em;
+  }
+}
+
+// ----------- PAGE-WRAP
+.main-header, .page-wrap, .heart-info {
+  width  : 80%;
+  margin : 0 auto;
+  @include breakpoint(papa-bear){
+    width : 90%;
+  }
+  @include breakpoint(baby-bear){
+    width : 100%;
+    padding-left  : $padding;
+    padding-right : $padding;
+  }
+}
+.page-wrap {
+  margin-top    : $padding;
+  margin-bottom : $padding;
+}
+
+// ----------- GRID
+.grid {
+  @include border-radius($radius);
+} 
+
+// ----------- BUTTON
+.button {
+  @include button 
+    (
+      $button,     // Background
+      white,       // Color
+      10px 20px,   // padding
+      10px,        // radius
+      4px
+    );
+}

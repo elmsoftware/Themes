@@ -1,0 +1,58 @@
+// Responsive Grid
+.grid {
+  @extend .clearfix;
+  width : 100%;
+}
+
+// Sidebar on Right
+//.right-sidebar {
+  .grid {
+    padding : 0;
+  }
+  .grid-primary {
+    width : 66.6%;
+    padding-right: $padding;
+    @include breakpoint(baby-bear) {
+      padding-right: 0;
+    }
+  }
+  .grid-secondary {
+    width         : 33.3%;
+    padding-right : 0;
+  }
+  [class*='grid-'] {
+    position      : relative;
+    float         : left;
+    padding-left  : 0;
+    @include breakpoint(baby-bear) {
+      float         : none;
+      width         : 100%;
+      padding-right : 0;
+    }
+  }  
+//}
+
+// Sidebar on Left
+.left-sidebar {
+  .grid-primary {
+    padding-right : 0;
+    padding-left  : $padding;
+    @include breakpoint(baby-bear) {
+      padding-left: 0;
+    }
+  }
+  .grid-secondary {
+    padding-left  : 0;
+  }
+  [class*='grid-'] {
+    float         : right;
+    padding-right : 0;
+  }  
+}
+
+// On Markdown page grid has a full width
+.markdown {
+  .grid-primary {
+    width : 100%;
+  }
+}

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rambla Bold'), local('Rambla-Bold'), url(//themes.googleusercontent.com/static/fonts/rambla/v1/kIZPeiOLKnKdd6L5mB1Cn7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rambla'), local('Rambla-Regular'), url(//themes.googleusercontent.com/static/fonts/rambla/v1/4oKK3Z-EimNu4ISiv21vMuvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+// --------- Font Stack Headers
+@mixin font-headers {
+  font-family : 'Rambla', sans-serif;
+  font-weight : 700;
+}
+
+@font-face {
+  font-family: 'Buenard';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Buenard Bold'), local('Buenard-Bold'), url(//themes.googleusercontent.com/static/fonts/buenard/v3/8T0adwz_RAtKrxbccQmEFL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Buenard';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Buenard'), local('Buenard-Regular'), url(//themes.googleusercontent.com/static/fonts/buenard/v3/_rjRFgQ8TJpAj5YkMnZgHwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+// --------- Font Stack Body
+@mixin font-body {
+  font-family : 'Buenard', serif;
+  font-weight : 400;
+}

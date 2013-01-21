@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Carme';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Carme Regular'), local('Carme'), url(//themes.googleusercontent.com/static/fonts/carme/v4/xKNtYcFVE-YlduYq3YvUKaCWcynf_cDxXwCLxiixG1c.woff) format('woff');
+}
+// --------- Font Stack Headers
+@mixin font-headers {
+  font-family: 'Carme', serif;
+  font-weight : 400;
+}
+
+@font-face {
+  font-family: 'Average';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Average'), local('Average-Regular'), url(//themes.googleusercontent.com/static/fonts/average/v1/4iG3r29DvHyol7Yxf3Wz2wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+// --------- Font Stack Body
+@mixin font-body {
+  font-family: 'Average', serif;
+}

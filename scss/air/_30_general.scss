@@ -1,0 +1,98 @@
+body {
+  background : $bg;
+}
+
+::selection {
+  background : $link;
+  color      : white;
+}
+
+// ----------- HEADER
+.main-header {
+  @include background-size(cover);
+  background-position: center;
+  background-color : $hero;
+  color            : white;
+  text-align       : center;
+  padding          : 0 $padding;
+  hgroup {
+    padding   : $padding*2 0;
+    @include breakpoint(baby-bear) {
+      padding : $padding 0;
+    }
+  }
+  h1, h2 {
+    color       : white;
+    margin      : .5em 0;
+    text-shadow : 0px 2px 4px black;
+    @include breakpoint(baby-bear) {
+      font-size : 150%;
+      margin    : .3em 0;
+    }
+  }
+  .ampersand {
+    color : lighten($link, 10%);
+  }
+  h2 {
+    @include breakpoint(baby-bear) {
+      font-size : 130%;
+    }
+  }
+  a {
+    color : white;
+    &:hover, &:focus {
+      text-shadow: 0 1px 4px black, 
+                   0 2px 6px white;
+    }
+    @include breakpoint(phone){
+      span {
+        display : block;
+      }
+    }
+  }
+  time {
+    display : block;
+    font-size: 80%;
+    margin-top: .6em;
+  }
+}
+
+// ----------- PAGE-WRAP
+.main-header, .page-wrap, .heart-info {
+  width  : 90%;
+  margin : 0 auto;
+  @include breakpoint(papa-bear){
+    width : 90%;
+  }
+  @include breakpoint(baby-bear){
+    width : 100%;
+    padding-left  : $padding;
+    padding-right : $padding;
+  }
+}
+.page-wrap {
+  margin-top    : $padding;
+  margin-bottom : $padding;
+}
+
+// ----------- GRID
+.grid-primary {
+  padding-right:0;
+  border-right:1px solid $bg;
+}
+.left-sidebar .grid-primary {
+  padding-left:0;
+  border-left:1px solid $bg;
+}
+
+// ----------- BUTTON
+.button {
+  @include button 
+    (
+      $button,     // Background
+      white,       // Color
+      10px 20px,   // padding
+      10px,        // radius
+      4px
+    );
+}

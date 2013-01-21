@@ -1,0 +1,40 @@
+// --------- Font Stack Headers
+@font-face {
+  font-family: 'Signika Negative';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Signika Negative Bold'), local('SignikaNegative-Bold'), url(//themes.googleusercontent.com/static/fonts/signikanegative/v2/q5TOjIw4CenPw6C-TW06FvRHEDGP1JGo_0-JTT3olAw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Signika Negative';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Signika Negative'), local('SignikaNegative-Regular'), url(//themes.googleusercontent.com/static/fonts/signikanegative/v2/Z-Q1hzbY8uAo3TpTyPFMXZDOGCuI1pQIwqDbhXqhZhw.woff) format('woff');
+}
+@mixin font-headers {
+  font-family : 'Signika Negative', serif;
+  font-weight : 700;
+}
+
+// --------- Font Stack Body
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(//themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(//themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(//themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@mixin font-body {
+  font-family : 'Open Sans', sans-serif;
+}

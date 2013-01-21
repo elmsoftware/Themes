@@ -1,0 +1,72 @@
+body {
+  font-size   : 18px; 
+  line-height : 1.5;
+  @include breakpoint(invite-bear) {
+    font-size : 95%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include font-headers;
+  color       : $articleHeading;
+  line-height : 1.2;
+  margin      : 0 0 .5em 0;
+}
+
+article {
+  @include font-body;
+  color : $articleColor;
+  h1 {
+    margin : 0 0 .6em 0;
+  }
+  h2, h3, h4, h5, h6 {
+    margin-top : 1.5em;
+  }
+}
+
+// ----------- ANCHOR
+a {
+  color   : $link;
+  &:hover, &:focus {
+    color : darken($link, 10);
+  }
+  &:active {
+    color : darken($link, 20);
+  }
+}
+
+// ----------- BLOCKQUOTE
+blockquote {
+  padding     : 15px;
+  margin      : $padding 0;
+  font-size   : 110%;
+  font-style  : italic;
+  border-left : 4px double $bg;
+  p:last-child {
+    margin : 0;
+  }
+}
+
+// ----------- FIGURE
+figure {
+  position   : relative;
+  text-align : center;
+  figcaption {
+    margin-top : 0;
+    font-style : italic;
+    background : rgba(black, .6);
+    color      : white;
+    padding    : 2px $padding;
+  }
+  img {
+    display : block;
+    margin  : 0 auto;
+  }
+}
+
+hr {
+  border : 0;
+  height : 1px;
+  margin : 2em 0;
+  border-top: 4px double $bg;
+}

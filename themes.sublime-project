@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/thelueders/Dropbox/Web/Themes",
+      "folder_exclude_patterns": ["css"]
+		}
+	]
+}

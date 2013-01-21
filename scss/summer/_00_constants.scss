@@ -1,0 +1,28 @@
+//http://www.colourlovers.com/palette/1514010/Types_of_Lemonade
+$link          : #F48C7F; //
+
+$hero          : #F5C47F; //red
+$bg            : #FFE681; //yellow
+$gridbg        : #F5A37F;
+
+$articleHeading : #222;
+$articleColor  : #444;
+
+$white         : #FAF7F7; //picket fence
+$quote         : #EB7F8B;
+$button        : $quote;
+
+$red           : darken($quote, 10%);
+
+$blockquotebg  : #eee;
+$lightGray     : #ccc;
+$gray          : gainsboro;
+
+$codeCapBg     : #555;
+$codeCapColor  : $link;
+$codeBg        : #333;
+$codeColor     : #ddd;
+
+$padding       : .7em;
+$radius        : $padding * .5;
+$innerRadius   : $radius * .5;

@@ -1,0 +1,104 @@
+// Additions
+*, *:after, *:before {
+  @include box-sizing(border-box);
+}
+html {
+  height: 100%;
+}
+
+// ----------- PARAGRAPH
+p {
+  margin: 0 0 1em;
+}
+p:empty {
+  display : none;
+}
+
+// ----------- ANCHORS
+a {
+  text-decoration : none;
+}
+
+// ----------- IMAGE
+img {
+  max-width : 100%;
+  height    : auto !important;
+}
+
+// ----------- TABLE
+table {
+  border-collapse : collapse;
+  border-spacing  : 0;
+  width           : 100%;
+  margin          : 0 0 20px 0;
+  th, td {
+    border  : 1px solid rgb(204, 204, 204);
+    padding : 5px;
+  }
+  th {
+    text-align: left;
+  }
+}
+
+// ----------- LISTS
+ol, ul {
+  margin-left: -1em;
+}
+li {
+  margin-bottom: .5em;
+}
+ol ol, ol ul, ul ul, ul ol {
+  margin-top: .5em;
+}
+
+// ----------- CLASSES
+.clearfix {
+  content : "";
+  display : table;
+  clear   : both;
+}
+.screen-reader {
+  position : absolute;
+  top      : -9999px;
+  left     : -9999px;
+}
+
+// ----------- MIXIN for pre
+@mixin precap {
+  @include font-body;
+  text-transform : uppercase;
+  font-size      : 75%;
+  letter-spacing : 2px;
+  color          : $codeCapColor;
+  background     : $codeCapBg;
+  display        : block;
+  padding        : $padding;
+  position       : absolute;
+  left           : 0;
+  width          : 100%;
+}
+pre {
+  background    : $codeBg;
+  color         : $codeColor;
+  position      : relative;
+  line-height   : 1.4;
+  padding       : $padding;
+  &.md {
+    margin-bottom : 3.5em;
+    padding       : $padding*3.6 $padding $padding;
+    &:before {
+      @include precap;
+      content  : attr(rel);
+      top      : 0;
+    }
+    &:after {
+      @include precap;
+      content       : 'Html Preview ⬇';
+      top           : 100%;
+    }
+  }
+}
+
+code {
+  background: whitesmoke;
+}

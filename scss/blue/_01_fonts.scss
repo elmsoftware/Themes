@@ -1,0 +1,52 @@
+// --------- Font Stack Headers
+//@font-face {
+//  font-family: 'Scada';
+//  font-style: normal;
+//  font-weight: 700;
+//  src: local('Scada Bold'), local('Scada-Bold'), url(//themes.googleusercontent.com/static/fonts/scada/v1/7GOX6HxeYisYUc-2bmBZNHYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+//}
+//@font-face {
+//  font-family: 'Scada';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Scada'), local('Scada-Regular'), url(//themes.googleusercontent.com/static/fonts/scada/v1/_glb0C_Za9TUO0rliiKHkqCWcynf_cDxXwCLxiixG1c.woff) format('woff');
+//}
+@font-face {
+  font-family: 'Domine';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Domine Bold'), local('Domine-Bold'), url(//themes.googleusercontent.com/static/fonts/domine/v1/BmiPqZorq0QiT-p6kf1pabO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Domine';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Domine'), local('Domine-Regular'), url(//themes.googleusercontent.com/static/fonts/domine/v1/pAB7vaxH_MyxaONhFl0NvevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@mixin font-headers {
+  font-family : 'Domine', serif;
+  font-weight : 700;
+}
+
+// --------- Font Stack Body
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(//themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(//themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(//themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@mixin font-body {
+  font-family : 'Open Sans', sans-serif;
+}
